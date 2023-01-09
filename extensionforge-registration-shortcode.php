@@ -42,7 +42,7 @@ define('EXTENSIONFORGE_REGISTRATION_INCLUDE_URL', plugin_dir_url(__FILE__).'incl
 add_action( 'template_redirect', 'redirect_to_extensionforge_registration' );
 function redirect_to_extensionforge_registration() {
     if ( is_page('registrierung') && ! is_user_logged_in() ) {
-      wp_redirect( 'https://wpclub2.webtyphoon.productions/registration/', 301 ); 
+      wp_redirect( '/registrierung/', 301 ); 
       exit;
     }
 }

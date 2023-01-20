@@ -39,13 +39,11 @@ define( 'EXTENSIONFORGE_REGISTRATION_SHORTCODE_VERSION', '1.0.0' );
 
 define('EXTENSIONFORGE_REGISTRATION_INCLUDE_URL', plugin_dir_url(__FILE__).'includes/');
 
-add_action( 'template_redirect', 'redirect_to_extensionforge_registration' );
-function redirect_to_extensionforge_registration() {
-    if ( is_page('registrierung') && ! is_user_logged_in() ) {
-      wp_redirect( '/registrierung/', 301 ); 
-      exit;
-    }
-}
+//add_action( 'template_redirect', 'redirect_to_extensionforge_registration' );
+//function redirect_to_extensionforge_registration() {
+//   if ( is_page('registrierung') &&  is_user_logged_in() ) {
+//     wp_redirect( '/', 301 ); 
+//     exit;}}
 
 
 function bpdev_ua_check_username() {
